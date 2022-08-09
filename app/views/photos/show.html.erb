@@ -1,0 +1,10 @@
+<%= "照片標題："%><br>
+<%= @photo.title%><br>
+<%= "拍攝日期："%><br>
+<%= @photo.date %><br>
+<%= image_tag(@photo.file_location.url, style: 'max-height:300px') %><br>
+<%= image_tag @photo.file_location.url, size: "300x300", class: "img-thumbnail" %> <br>
+<%= "照片備註："%><br>
+<%= simple_format(@photo.description) %>
+
+<p><%= link_to 'Back to index', photos_path %></p>
