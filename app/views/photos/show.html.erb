@@ -4,7 +4,7 @@
 <%= @photo.date %><br>
 <%= image_tag(@photo.file_location.url, style: 'max-height:300px') %><br>
 <%= image_tag @photo.file_location.url, size: "300x300", class: "img-thumbnail" %> <br>
-<%= "照片備註："%><br>
+<%= "照片資訊："%><br>
 <%= simple_format(@photo.description) %>
 
 <p><%= link_to 'Back to index', photos_path %></p>
